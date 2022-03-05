@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>nafuchs.github.io</h1>
+    <p>       <script type="text/javascript">
+
+        var options = {
+            value_set: [
+                {key:'yes1',probability: 0, description: 'Virtual Learning', color_img:'color-1.jpg',label_img:'label-1.png'},
+                {key:'yes2',probability: 1, description: 'Systemic Racism', color_img:'color-2.jpg',label_img:'label-2.png'},
+                {key:'yes3',probability: 0, description: 'COVID-19', color_img:'color-1.jpg',label_img:'label-3.png'},
+                {key:'yes4',probability: 0, description: 'Minimum Wage', color_img:'color-2.jpg',label_img:'label-4.png'}
+            ],
+            images: {
+                base_url: 'img',
+                img_size: 400,
+                select_img: 'arrow.png'
+
+            },
+            result_callback: function(throw_nr,result_key){
+                alert('in throw '+throw_nr+' result '+result_key);
+            }
+        };
+
+      const wheel_create_here = ('Rotate me now!',options);
+
+    </script>
+</body>
+</html>
